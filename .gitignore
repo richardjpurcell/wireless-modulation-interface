@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# PlatformIO
+.pio/
+.piolibdeps/
+
+# Embedded build artifacts
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.a
+
+# KiCad local settings and temporary files
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.sch-bak
+*.bak
+*.lck
+~*.lck
+*-backups/
+fp-info-cache
+
+# IDE settings
+.vscode/
+.idea/
+
+# Local configuration and credentials
+.env
+.env.local
+secrets.h
+secrets.yml
+
+# Temporary files
+*.tmp
+*.swp
+*.log

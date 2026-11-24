@@ -1,0 +1,17 @@
+name: wmi
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - platformio==6.2.0
+      - pyserial==3.5
+      - bleak==3.1.0
+      - python-osc==1.10.3
+      - numpy==2.5.5
+      - matplotlib==3.11.2
+      - pyyaml==6.0.4
+      - pytest==9.2.0
+variables:
+  PYTHONPATH: ""
