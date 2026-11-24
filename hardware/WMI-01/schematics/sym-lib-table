@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "WMI-Power") (type "KiCad") (uri "${KIPRJMOD}/../../common/symbols/WMI-Power.kicad_sym") (options "") (descr "WMI prototype power symbols")))

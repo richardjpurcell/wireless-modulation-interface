@@ -1,9 +1,179 @@
-(kicad_sch
- (version 20260306)
- (generator "eeschema")
- (generator_version "10.0")
- (uuid c1957ef8-b6ca-4b84-9ec4-99695b342642)
- (paper "A4")
- (lib_symbols)
- (embedded_fonts no)
+(kicad_sch (version 20260306) (generator "eeschema") (generator_version "10.0") (uuid c1957ef8-b6ca-4b84-9ec4-99695b342642) (paper "A4") (title_block (title "WMI-PWR - engineering draft") (rev "2.6b")) (lib_symbols
+(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "WMI-Power:Battery" (pin_names (offset 0.508) hide) (pin_numbers hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "B" (at 0 10.16 0) (effects (font (size 1.27 1.27)) )) (property "Value" "Battery" (at 0 -10.16 0) (effects (font (size 1.27 1.27)) )) (symbol "Battery_0_1" (polyline (pts (xy -3.81 1.27) (xy 3.81 1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.54 -1.27) (xy 2.54 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Battery_1_1" (pin passive line (at 0 5.08 270) (length 3.81) (name "+" (effects (font (size 1.0 1.0)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0 -5.08 90) (length 3.81) (name "-" (effects (font (size 1.0 1.0)) )) (number "2" (effects (font (size 1.0 1.0)) )))))
+(symbol "WMI-Power:Charger4755" (pin_names (offset 0.508)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 10.16 0) (effects (font (size 1.27 1.27)) )) (property "Value" "Charger4755" (at 0 -10.16 0) (effects (font (size 1.27 1.27)) )) (symbol "Charger4755_0_1" (rectangle (start -12.7 7.62) (end 12.7 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "Charger4755_1_1" (pin passive line (at -17.78 2.54 0) (length 5.08) (name "BAT+" (effects (font (size 1.0 1.0)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -17.78 -2.54 0) (length 5.08) (name "BAT-" (effects (font (size 1.0 1.0)) )) (number "2" (effects (font (size 1.0 1.0)) ))) (pin power_out line (at 17.78 2.54 180) (length 5.08) (name "LOAD+" (effects (font (size 1.0 1.0)) )) (number "3" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 17.78 -2.54 180) (length 5.08) (name "LOAD-" (effects (font (size 1.0 1.0)) )) (number "4" (effects (font (size 1.0 1.0)) )))))
+(symbol "WMI-Power:Boost2565" (pin_names (offset 0.508)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 10.16 0) (effects (font (size 1.27 1.27)) )) (property "Value" "Boost2565" (at 0 -10.16 0) (effects (font (size 1.27 1.27)) )) (symbol "Boost2565_0_1" (rectangle (start -12.7 7.62) (end 12.7 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "Boost2565_1_1" (pin power_in line (at -17.78 2.54 0) (length 5.08) (name "VIN" (effects (font (size 1.0 1.0)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at -17.78 -2.54 0) (length 5.08) (name "GND" (effects (font (size 1.0 1.0)) )) (number "2" (effects (font (size 1.0 1.0)) ))) (pin power_out line (at 17.78 2.54 180) (length 5.08) (name "VOUT" (effects (font (size 1.0 1.0)) )) (number "3" (effects (font (size 1.0 1.0)) ))) (pin input line (at 17.78 -2.54 180) (length 5.08) (name "ENABLE" (effects (font (size 1.0 1.0)) )) (number "4" (effects (font (size 1.0 1.0)) )))))
+(symbol "WMI-Power:Fuse" (pin_names (offset 0.508) hide) (pin_numbers hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "F" (at 0 10.16 0) (effects (font (size 1.27 1.27)) )) (property "Value" "Fuse" (at 0 -10.16 0) (effects (font (size 1.27 1.27)) )) (symbol "Fuse_0_1" (rectangle (start -3.81 1.27) (end 3.81 -1.27) (stroke (width 0.254) (type default)) (fill (type background))) (polyline (pts (xy -3.81 0) (xy 3.81 0)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "Fuse_1_1" (pin passive line (at -7.62 0 0) (length 3.81) (name "1" (effects (font (size 1.0 1.0)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 7.62 0 180) (length 3.81) (name "2" (effects (font (size 1.0 1.0)) )) (number "2" (effects (font (size 1.0 1.0)) )))))
+(symbol "WMI-Power:SPST" (pin_names (offset 0.508) hide) (pin_numbers hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "SW" (at 0 10.16 0) (effects (font (size 1.27 1.27)) )) (property "Value" "SPST" (at 0 -10.16 0) (effects (font (size 1.27 1.27)) )) (symbol "SPST_0_1" (polyline (pts (xy -2.54 0) (xy 2.54 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "SPST_1_1" (pin passive line (at -7.62 0 0) (length 5.08) (name "1" (effects (font (size 1.0 1.0)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 7.62 0 180) (length 5.08) (name "2" (effects (font (size 1.0 1.0)) )) (number "2" (effects (font (size 1.0 1.0)) )))))
+(symbol "WMI-Power:CapPolar" (pin_names (offset 0.508) hide) (pin_numbers hide) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "C" (at 0 10.16 0) (effects (font (size 1.27 1.27)) )) (property "Value" "CapPolar" (at 0 -10.16 0) (effects (font (size 1.27 1.27)) )) (symbol "CapPolar_0_1" (polyline (pts (xy -3.81 1.27) (xy 3.81 1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -3.81 -1.27) (xy 3.81 -1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -5.08 2.54) (xy -3.81 2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -4.445 1.905) (xy -4.445 3.175)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol "CapPolar_1_1" (pin passive line (at 0 5.08 270) (length 3.81) (name "+" (effects (font (size 1.0 1.0)) )) (number "1" (effects (font (size 1.0 1.0)) ))) (pin passive line (at 0 -5.08 90) (length 3.81) (name "-" (effects (font (size 1.0 1.0)) )) (number "2" (effects (font (size 1.0 1.0)) ))))))
+(symbol (lib_id "WMI-Power:Battery") (at 35.56 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 9f62d574-b43f-49a0-94dc-62db1845e10a) (property "Reference" "B1" (at 45.72 53.34 0) (effects (font (size 1.27 1.27)) ))(property "Value" "LiPo 2000mAh (HOLD)" (at 48.260000000000005 58.42 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid c239a922-5763-4d35-8e63-11b1e3458c73)) (pin "2" (uuid f9d42529-9bf5-4662-aed9-297922318569)) (instances (project "WMI-01" (path "/cd656ac0-647d-4441-bc76-09ff6d1eda88/ad8f9b5d-f5ee-4ee6-921e-26f47c24b9a0" (reference "B1") (unit 1)))))
+(wire (pts (xy 35.56 50.8) (xy 35.56 43.18)) (stroke (width 0) (type default)) (uuid 58fb844e-cb30-426b-b1c2-0e00093ca0e3))
+(label "BAT" (at 35.56 43.18 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 1f1cd701-126f-408a-8522-80f10cc844b1))
+(wire (pts (xy 35.56 60.96) (xy 35.56 68.58)) (stroke (width 0) (type default)) (uuid 3eec793e-a294-4396-b249-a260b61e278d))
+(label "GND" (at 35.56 68.58 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 460ab67a-3f4a-4287-bae4-ac7bcb5805cf))
+(symbol (lib_id "WMI-Power:Charger4755") (at 88.9 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 724c461f-7f22-4582-acb1-d4fdb4edbe39) (property "Reference" "U1" (at 88.9 45.72 0) (effects (font (size 1.27 1.27)) ))(property "Value" "Adafruit 4755" (at 88.9 66.04 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid f232ca1c-1212-4b6a-bdf3-9221c5a25f2f)) (pin "2" (uuid 6ef94714-beac-421a-ada9-ef4073527396)) (pin "3" (uuid 48f457c6-f3b5-487e-8e37-ce65b306f592)) (pin "4" (uuid e64d2dfd-1eed-4ae4-a40f-99cfe32fe9b4)) (instances (project "WMI-01" (path "/cd656ac0-647d-4441-bc76-09ff6d1eda88/ad8f9b5d-f5ee-4ee6-921e-26f47c24b9a0" (reference "U1") (unit 1)))))
+(wire (pts (xy 71.12 53.34) (xy 63.5 53.34)) (stroke (width 0) (type default)) (uuid 4a35ac80-5750-418c-bd0c-182e182238a9))
+(label "BAT" (at 63.5 53.34 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 2745a345-69fc-41cd-afb3-82222cdfddb8))
+(wire (pts (xy 71.12 58.42) (xy 63.5 58.42)) (stroke (width 0) (type default)) (uuid 73b455b8-4136-4d3f-b0e5-de3136165125))
+(label "GND" (at 63.5 58.42 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 776d933f-cffb-421b-ba5e-36cd4614e16a))
+(wire (pts (xy 106.68 53.34) (xy 114.3 53.34)) (stroke (width 0) (type default)) (uuid 72367f52-6e95-451f-bf55-f19660dc897b))
+(label "LOAD" (at 114.3 53.34 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid c9ff72ca-c26f-4235-a8a3-771e6fe1406e))
+(wire (pts (xy 106.68 58.42) (xy 114.3 58.42)) (stroke (width 0) (type default)) (uuid f4dc8705-5f26-44b2-858d-cdbca18fe5ea))
+(label "GND" (at 114.3 58.42 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 0a57ed2b-9c15-48b2-968a-a2a43266b4b7))
+(symbol (lib_id "WMI-Power:Fuse") (at 139.7 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 941af625-4cd5-45d3-a87a-9486e137db40) (property "Reference" "F1" (at 139.7 48.260000000000005 0) (effects (font (size 1.27 1.27)) ))(property "Value" "TBD (HOLD)" (at 139.7 64.77000000000001 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid 53bd7d84-0f5a-4c6a-b112-dbc74743e7e2)) (pin "2" (uuid 7b6012ba-a575-4815-9f19-d747118f86b9)) (instances (project "WMI-01" (path "/cd656ac0-647d-4441-bc76-09ff6d1eda88/ad8f9b5d-f5ee-4ee6-921e-26f47c24b9a0" (reference "F1") (unit 1)))))
+(wire (pts (xy 132.08 55.88) (xy 124.46 55.88)) (stroke (width 0) (type default)) (uuid ca8d9d64-2d8b-47e3-a9c4-f0afac974c8d))
+(label "LOAD" (at 124.46 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid e00e02a3-5e61-4dc6-8e4c-9fb3f1355411))
+(wire (pts (xy 147.32 55.88) (xy 154.94 55.88)) (stroke (width 0) (type default)) (uuid c7c02a98-eac1-43a1-8316-0ad39cb2828b))
+(label "FUSED" (at 154.94 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid af10aa66-2ca2-4f1f-8a3e-cf510f70d848))
+(symbol (lib_id "WMI-Power:SPST") (at 187.96 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid be5d1e49-97b2-4fc5-9acb-445fba9193a2) (property "Reference" "SW1" (at 187.96 48.260000000000005 0) (effects (font (size 1.27 1.27)) ))(property "Value" "DC SPST (HOLD)" (at 187.96 64.77000000000001 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid 17a5336c-4338-4d66-90aa-c52403426602)) (pin "2" (uuid 042b88c9-36ec-487d-902f-f4db480a75d4)) (instances (project "WMI-01" (path "/cd656ac0-647d-4441-bc76-09ff6d1eda88/ad8f9b5d-f5ee-4ee6-921e-26f47c24b9a0" (reference "SW1") (unit 1)))))
+(wire (pts (xy 180.34 55.88) (xy 172.72 55.88)) (stroke (width 0) (type default)) (uuid 55d613d6-99a4-43ba-9b3d-2b95538caf48))
+(label "FUSED" (at 172.72 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid b8cf31d8-3952-45fa-b1c1-5d99bb0a4a03))
+(wire (pts (xy 195.58 55.88) (xy 203.2 55.88)) (stroke (width 0) (type default)) (uuid 33a1e4d2-e1cc-412a-bbbb-f6d719b98082))
+(label "SWLOAD" (at 203.2 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 2429417a-34a1-4d62-a7a2-6de1ea0683c9))
+(symbol (lib_id "WMI-Power:Boost2565") (at 241.3 88.9 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 35a26333-7eca-44b6-b91c-fde45fc5a41d) (property "Reference" "U2" (at 241.3 78.74000000000001 0) (effects (font (size 1.27 1.27)) ))(property "Value" "Pololu 2565" (at 241.3 99.06 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid 993afed0-86de-4f0c-9f40-91b325427a83)) (pin "2" (uuid bb5818ed-a5b9-4b48-9ceb-c888cddd0957)) (pin "3" (uuid c63b0016-c455-46c8-93c7-18167ebe58e7)) (pin "4" (uuid 583267cf-0c1a-4696-a65b-8bf2be20efb5)) (instances (project "WMI-01" (path "/cd656ac0-647d-4441-bc76-09ff6d1eda88/ad8f9b5d-f5ee-4ee6-921e-26f47c24b9a0" (reference "U2") (unit 1)))))
+(wire (pts (xy 223.52 86.36) (xy 215.9 86.36)) (stroke (width 0) (type default)) (uuid 925bc5e4-2d56-4f86-a421-5638ab37f35d))
+(label "SWLOAD" (at 215.9 86.36 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 224cdd99-cf9c-4062-b02b-6a5df13f1e2b))
+(wire (pts (xy 223.52 91.44) (xy 215.9 91.44)) (stroke (width 0) (type default)) (uuid 75dd2a0e-80ce-4239-99f7-364388ac6af0))
+(label "GND" (at 215.9 91.44 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid e158b024-434a-4ab4-a471-b6b35704bf83))
+(wire (pts (xy 259.08 86.36) (xy 266.7 86.36)) (stroke (width 0) (type default)) (uuid 66021818-1896-454d-94f2-d216647c5614))
+(label "5V" (at 266.7 86.36 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 3a344e8a-fd79-4e98-8996-fc747c2660fe))
+(no_connect (at 259.08 91.44) (uuid 76e5a983-65ec-442d-b8a8-44daf3b629c5))
+(symbol (lib_id "WMI-Power:CapPolar") (at 137.16 114.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 8f693301-9bfc-4d3f-9b17-becb3f109cd1) (property "Reference" "C1" (at 147.32 111.75999999999999 0) (effects (font (size 1.27 1.27)) ))(property "Value" "47uF / 16V" (at 149.85999999999999 116.84 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid 764ae41c-e6ed-47a9-b07b-08b67aa4068e)) (pin "2" (uuid 294bb26d-8813-49bc-af62-f40642ca9645)) (instances (project "WMI-01" (path "/cd656ac0-647d-4441-bc76-09ff6d1eda88/ad8f9b5d-f5ee-4ee6-921e-26f47c24b9a0" (reference "C1") (unit 1)))))
+(wire (pts (xy 137.16 109.22) (xy 137.16 101.6)) (stroke (width 0) (type default)) (uuid 6fcd537e-6e5d-4df1-a442-091bbab316c2))
+(label "SWLOAD" (at 137.16 101.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid eba10772-a9ce-41f7-bcfa-b8ed847b7eb0))
+(wire (pts (xy 137.16 119.38) (xy 137.16 127.0)) (stroke (width 0) (type default)) (uuid 3a457d76-d3ce-4592-ab61-8e62accf97d8))
+(label "GND" (at 137.16 127.0 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 3751dd30-4242-4829-adb8-a473b0003d5e))
+(symbol (lib_id "WMI-Power:CapPolar") (at 190.5 114.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid a4f56182-9a89-42a8-b0bd-fdc660aea28f) (property "Reference" "C2" (at 200.66 111.75999999999999 0) (effects (font (size 1.27 1.27)) ))(property "Value" "100uF / 16V" (at 203.2 116.84 0) (effects (font (size 1.27 1.27)) )) (pin "1" (uuid 8fc99ddf-dfa4-49fb-9d7b-9819cd11ff99)) (pin "2" (uuid 7e39f48a-7aeb-4096-8815-112c79929b3b)) (instances (project "WMI-01" (path "/cd656ac0-647d-4441-bc76-09ff6d1eda88/ad8f9b5d-f5ee-4ee6-921e-26f47c24b9a0" (reference "C2") (unit 1)))))
+(wire (pts (xy 190.5 109.22) (xy 190.5 101.6)) (stroke (width 0) (type default)) (uuid 9a55834b-7468-49c7-bd96-e6e5bbc3966a))
+(label "5V" (at 190.5 101.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid dece9c99-3c5a-4975-9e47-4312336c6d31))
+(wire (pts (xy 190.5 119.38) (xy 190.5 127.0)) (stroke (width 0) (type default)) (uuid d2ea4ea1-ccec-4edc-b03b-d48712552d9a))
+(label "GND" (at 190.5 127.0 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 1ef46686-946d-42e8-ad7c-529db6215ce4))
+(text "WMI-PWR | Prototype review only" (at 25.4 20.32 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 83037f9f-7e6a-49f8-8640-2acef5bcee56))
+(text "USB charging via U1 onboard connector; set 500 mA per board instructions." (at 25.4 137.16 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 1a8cb564-2c59-4a64-bffd-e4d3ea15b24d))
+(text "SW1 physically interrupts LOAD. ENABLE is not a load disconnect." (at 25.4 144.78 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 45a11a81-4ab2-458d-9151-88eb9a5169ff))
+(text "F1, battery current, inrush and capacitor values require validation." (at 25.4 152.4 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 01a4caaa-b9a8-4a6a-8522-c416e014ee77))
+(text "5V and GND are local nets until hierarchical interfaces are added." (at 25.4 160.02 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid 061a6344-84db-46c2-b650-8a15d2a0b58f))
+(text "Remove entire core harness before connecting Feather USB." (at 25.4 167.64 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid d9119d2e-46bf-4d9f-8532-c7b86d5f3952))
+(wire (pts (xy 137.16 101.6) (xy 137.16 93.98)) (stroke (width 0) (type default)) (uuid a4b17ffa-5d78-467b-ba66-2cc616fb63d2))
+(symbol (lib_id "power:PWR_FLAG") (at 137.16 93.98 0) (unit 1)
+  (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid d4efefeb-7f08-4805-8bd7-02d284df12b7)
+  (property "Reference" "#FLG01" (at 137.16 93.98 0) (effects (font (size 1.27 1.27)) (hide yes)))
+  (property "Value" "PWR_FLAG" (at 137.16 90.17 0) (effects (font (size 1.27 1.27))))
+  (pin "1" (uuid 73f41748-df71-44d3-93b2-5875b900157f))
+  (instances (project "WMI-01" (path "/cd656ac0-647d-4441-bc76-09ff6d1eda88/ad8f9b5d-f5ee-4ee6-921e-26f47c24b9a0" (reference "#FLG01") (unit 1)))))
+(embedded_fonts no)
 )
