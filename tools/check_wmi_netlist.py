@@ -6,7 +6,7 @@ from pathlib import Path
 def parse(text):
     stack=[]; root=[]; current=root
     for t in re.findall(r'"(?:\\.|[^"\\])*"|[()]|[^\s()"]+',text):
-        if t=='(': 
+        if t=='(':
             child=[]; current.append(child); stack.append(current); current=child
         elif t==')': current=stack.pop()
         else: current.append(t[1:-1] if t.startswith('"') else t)
