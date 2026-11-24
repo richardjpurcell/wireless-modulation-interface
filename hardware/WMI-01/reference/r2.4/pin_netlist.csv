@@ -1,0 +1,230 @@
+sheet,ref,value,pin_id,pin_name,net,status,note
+PWR,U1,BQ24074 module,1,BAT+,BAT,Prototype,Module terminal names; USB charging input on module. Set charge rate 0.5 A pending cell rating.
+PWR,U1,BQ24074 module,2,BAT-,GND,Prototype,Module terminal names; USB charging input on module. Set charge rate 0.5 A pending cell rating.
+PWR,U1,BQ24074 module,3,OUT,LOAD,Prototype,Module terminal names; USB charging input on module. Set charge rate 0.5 A pending cell rating.
+PWR,U1,BQ24074 module,4,GND,GND,Prototype,Module terminal names; USB charging input on module. Set charge rate 0.5 A pending cell rating.
+PWR,B1,Protected LiPo 2000mAh,1,+,BAT,Hold,Confirm peak discharge rating; standard discharge 0.5 A.
+PWR,B1,Protected LiPo 2000mAh,2,-,GND,Hold,Confirm peak discharge rating; standard discharge 0.5 A.
+PWR,F1,Fuse TBD,1,1,LOAD,Hold,"Coordinate cell, wiring and inrush ratings."
+PWR,F1,Fuse TBD,2,2,FUSED,Hold,"Coordinate cell, wiring and inrush ratings."
+PWR,SW1,SPST DC power,1,1,FUSED,Hold,"Load-current rated; physical disconnect, not enable."
+PWR,SW1,SPST DC power,2,2,SWLOAD,Hold,"Load-current rated; physical disconnect, not enable."
+PWR,U2,5 V boost,1,VIN,SWLOAD,Prototype,Module pin numbering logical; verify enable default per manufacturer.
+PWR,U2,5 V boost,2,GND,GND,Prototype,Module pin numbering logical; verify enable default per manufacturer.
+PWR,U2,5 V boost,3,VOUT,5V,Prototype,Module pin numbering logical; verify enable default per manufacturer.
+PWR,U2,5 V boost,4,ENABLE,NC,Prototype,Module pin numbering logical; verify enable default per manufacturer.
+PWR,C1,47uF,1,1,SWLOAD,Prototype,Observe polarity; confirm regulator capacitance limits.
+PWR,C1,47uF,2,2,GND,Prototype,Observe polarity; confirm regulator capacitance limits.
+PWR,C2,100uF,1,1,5V,Prototype,Observe polarity; confirm regulator capacitance limits.
+PWR,C2,100uF,2,2,GND,Prototype,Observe polarity; confirm regulator capacitance limits.
+CORE,U3,ESP32-S3 Feather,1,USB,5V,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,2,GND,GND,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,3,3V,3V3,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,4,SDA,SDA,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,5,SCL,SCL,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,6,D5,DEPTH1,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,7,D6,DEPTH2,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,8,D9,READY,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,9,D10,MODE,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,10,D11,MUTE_SENSE,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,11,D12,LINK_LED,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,12,D13,MODE_LED,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,13,A4,HEARTBEAT,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,14,A3,FAULT_N,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,15,A5,BAT_ADC,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,16,TX,UART_TX,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U3,ESP32-S3 Feather,17,RX,UART_RX,Prototype,"Logical terminal IDs, not physical header numbering. BAT and RST unused. Remove core harness before USB."
+CORE,U4,MCP4728 module,1,VIN,3V3,Prototype,Module labels; verify breakout revision and I2C address 0x60/0x64.
+CORE,U4,MCP4728 module,2,GND,GND,Prototype,Module labels; verify breakout revision and I2C address 0x60/0x64.
+CORE,U4,MCP4728 module,3,SDA,SDA,Prototype,Module labels; verify breakout revision and I2C address 0x60/0x64.
+CORE,U4,MCP4728 module,4,SCL,SCL,Prototype,Module labels; verify breakout revision and I2C address 0x60/0x64.
+CORE,U4,MCP4728 module,5,VA,DAC_A,Prototype,Module labels; verify breakout revision and I2C address 0x60/0x64.
+CORE,U4,MCP4728 module,6,VB,DAC_B,Prototype,Module labels; verify breakout revision and I2C address 0x60/0x64.
+CORE,U4,MCP4728 module,7,VC,DAC_C,Prototype,Module labels; verify breakout revision and I2C address 0x60/0x64.
+CORE,U4,MCP4728 module,8,VD,DAC_D,Prototype,Module labels; verify breakout revision and I2C address 0x60/0x64.
+CORE,J3,Digital expansion,1,GND,GND,Hold,Spare pins deliberately unconnected.
+CORE,J3,Digital expansion,2,3V3,3V3,Hold,Spare pins deliberately unconnected.
+CORE,J3,Digital expansion,3,SDA,SDA,Hold,Spare pins deliberately unconnected.
+CORE,J3,Digital expansion,4,SCL,SCL,Hold,Spare pins deliberately unconnected.
+CORE,J3,Digital expansion,5,UART_TX,UART_TX,Hold,Spare pins deliberately unconnected.
+CORE,J3,Digital expansion,6,UART_RX,UART_RX,Hold,Spare pins deliberately unconnected.
+CORE,J3,Digital expansion,7,NC,NC,Hold,Spare pins deliberately unconnected.
+CORE,J3,Digital expansion,8,NC,NC,Hold,Spare pins deliberately unconnected.
+CORE,J4,Core harness - logical boundary,1,5V,5V,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,2,GND,GND,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,3,3V3,3V3,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,4,DAC_A,DAC_A,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,5,DAC_B,DAC_B,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,6,DAC_C,DAC_C,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,7,DAC_D,DAC_D,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,8,READY,READY,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,9,HEARTBEAT,HEARTBEAT,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,10,FAULT_N,FAULT_N,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,11,DEPTH1,DEPTH1,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,12,DEPTH2,DEPTH2,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,13,MODE,MODE,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,14,MUTE_SENSE,MUTE_SENSE,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,15,LINK_LED,LINK_LED,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,16,MODE_LED,MODE_LED,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CORE,J4,Core harness - logical boundary,17,BAT_ADC,BAT_ADC,Hold,One removable harness or keyed gang of plugs; disconnect every connection before USB service. Diagram nets represent RUN only.
+CV2,U8,Dual op amp,1,OUTA,AMP_A,Prototype,
+CV2,U8,Dual op amp,2,INA-,FB_A,Prototype,
+CV2,U8,Dual op amp,3,INA+,IN_A,Prototype,
+CV2,U8,Dual op amp,4,VSS,GND,Prototype,
+CV2,U8,Dual op amp,5,INB+,IN_B,Prototype,
+CV2,U8,Dual op amp,6,INB-,FB_B,Prototype,
+CV2,U8,Dual op amp,7,OUTB,AMP_B,Prototype,
+CV2,U8,Dual op amp,8,VDD,5V,Prototype,
+CV2,U9,Protected switch,1,IN1,ENABLE,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,2,D1,IN_A,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,3,S1,DAC_A,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,4,VSS,GND,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,5,GND,GND,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,6,S4,EXT_B,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,7,D4,RELAY_B,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,8,IN4,ENABLE,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,9,IN3,ENABLE,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,10,D3,RELAY_A,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,11,S3,EXT_A,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,12,NC,NC,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,13,VDD,5V,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,14,S2,DAC_B,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,15,D2,IN_B,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,U9,Protected switch,16,IN2,ENABLE,Prototype,TSSOP pinout verified; fault/logic/sequence testing required.
+CV2,R20,12k 0.1%,1,1,AMP_A,Prototype,
+CV2,R20,12k 0.1%,2,2,FB_A,Prototype,
+CV2,R21,10k 0.1%,1,1,FB_A,Prototype,
+CV2,R21,10k 0.1%,2,2,GND,Prototype,
+CV2,R22,1k,1,1,AMP_A,Prototype,
+CV2,R22,1k,2,2,FILTER_A,Prototype,
+CV2,R23,100k,1,1,IN_A,Prototype,
+CV2,R23,100k,2,2,GND,Prototype,
+CV2,R24,10k,1,1,NC_A,Prototype,
+CV2,R24,10k,2,2,GND,Prototype,
+CV2,R25,330R 0.5W,1,1,EXT_A,Prototype,
+CV2,R25,330R 0.5W,2,2,JACK_A,Prototype,
+CV2,R26,100k,1,1,JACK_A,Prototype,
+CV2,R26,100k,2,2,GND,Prototype,
+CV2,C20,1uF,1,1,FILTER_A,Prototype,
+CV2,C20,1uF,2,2,GND,Prototype,
+CV2,J5,3.5mm TS jack,1,TIP,JACK_A,Hold,Select true panel mounting; validate load impedance.
+CV2,J5,3.5mm TS jack,2,SLEEVE,GND,Hold,Select true panel mounting; validate load impedance.
+CV2,D2,TVS candidate,1,K,JACK_A,Hold,DNP until external fault and leakage review; jack-side clamp has no series limit from external source.
+CV2,D2,TVS candidate,2,A,GND,Hold,DNP until external fault and leakage review; jack-side clamp has no series limit from external source.
+CV2,R30,12k 0.1%,1,1,AMP_B,Prototype,
+CV2,R30,12k 0.1%,2,2,FB_B,Prototype,
+CV2,R31,10k 0.1%,1,1,FB_B,Prototype,
+CV2,R31,10k 0.1%,2,2,GND,Prototype,
+CV2,R32,1k,1,1,AMP_B,Prototype,
+CV2,R32,1k,2,2,FILTER_B,Prototype,
+CV2,R33,100k,1,1,IN_B,Prototype,
+CV2,R33,100k,2,2,GND,Prototype,
+CV2,R34,10k,1,1,NC_B,Prototype,
+CV2,R34,10k,2,2,GND,Prototype,
+CV2,R35,330R 0.5W,1,1,EXT_B,Prototype,
+CV2,R35,330R 0.5W,2,2,JACK_B,Prototype,
+CV2,R36,100k,1,1,JACK_B,Prototype,
+CV2,R36,100k,2,2,GND,Prototype,
+CV2,C21,1uF,1,1,FILTER_B,Prototype,
+CV2,C21,1uF,2,2,GND,Prototype,
+CV2,J6,3.5mm TS jack,1,TIP,JACK_B,Hold,Select true panel mounting; validate load impedance.
+CV2,J6,3.5mm TS jack,2,SLEEVE,GND,Hold,Select true panel mounting; validate load impedance.
+CV2,D3,TVS candidate,1,K,JACK_B,Hold,DNP until external fault and leakage review; jack-side clamp has no series limit from external source.
+CV2,D3,TVS candidate,2,A,GND,Hold,DNP until external fault and leakage review; jack-side clamp has no series limit from external source.
+CV2,K1,DPDT relay,1,COIL+,COIL_PLUS,Hold,Logical terminal IDs only; verify manufacturer bottom view and continuity before soldering.
+CV2,K1,DPDT relay,2,COIL-,COIL_MINUS,Hold,Logical terminal IDs only; verify manufacturer bottom view and continuity before soldering.
+CV2,K1,DPDT relay,3,NO1,FILTER_A,Hold,Logical terminal IDs only; verify manufacturer bottom view and continuity before soldering.
+CV2,K1,DPDT relay,4,COM1,RELAY_A,Hold,Logical terminal IDs only; verify manufacturer bottom view and continuity before soldering.
+CV2,K1,DPDT relay,5,NC1,NC_A,Hold,Logical terminal IDs only; verify manufacturer bottom view and continuity before soldering.
+CV2,K1,DPDT relay,6,NO2,FILTER_B,Hold,Logical terminal IDs only; verify manufacturer bottom view and continuity before soldering.
+CV2,K1,DPDT relay,7,COM2,RELAY_B,Hold,Logical terminal IDs only; verify manufacturer bottom view and continuity before soldering.
+CV2,K1,DPDT relay,8,NC2,NC_B,Hold,Logical terminal IDs only; verify manufacturer bottom view and continuity before soldering.
+CV2,C22,100nF,1,1,5V,Prototype,
+CV2,C22,100nF,2,2,GND,Prototype,
+CV2,C23,10uF,1,1,5V,Prototype,
+CV2,C23,10uF,2,2,GND,Prototype,
+CV2,C24,100nF,1,1,5V,Prototype,
+CV2,C24,100nF,2,2,GND,Prototype,
+SAFE,U5,Watchdog supervisor,1,RESET_N,FAULT_N,Prototype,
+SAFE,U5,Watchdog supervisor,2,GND,GND,Prototype,
+SAFE,U5,Watchdog supervisor,3,MR_N,PWR5_OK,Prototype,
+SAFE,U5,Watchdog supervisor,4,WDI,HEARTBEAT,Prototype,
+SAFE,U5,Watchdog supervisor,5,VDD,3V3,Prototype,
+SAFE,U6,5V supervisor,1,RESET_N,PWR5_OK,Prototype,
+SAFE,U6,5V supervisor,2,GND,GND,Prototype,
+SAFE,U6,5V supervisor,3,MR_N,3V3,Prototype,
+SAFE,U6,5V supervisor,4,CT,NC,Prototype,
+SAFE,U6,5V supervisor,5,SENSE,SENSE5,Prototype,
+SAFE,U6,5V supervisor,6,VDD,3V3,Prototype,
+SAFE,U7,AND gate,1,A,READY,Prototype,
+SAFE,U7,AND gate,2,B,FAULT_N,Prototype,
+SAFE,U7,AND gate,3,GND,GND,Prototype,
+SAFE,U7,AND gate,4,Y,ENABLE,Prototype,
+SAFE,U7,AND gate,5,VCC,3V3,Prototype,
+SAFE,R40,107k 0.1%,1,1,5V,Prototype,
+SAFE,R40,107k 0.1%,2,2,SENSE5,Prototype,
+SAFE,R41,10k 0.1%,1,1,SENSE5,Prototype,
+SAFE,R41,10k 0.1%,2,2,GND,Prototype,
+SAFE,R42,10k,1,1,3V3,Prototype,
+SAFE,R42,10k,2,2,PWR5_OK,Prototype,
+SAFE,R43,10k,1,1,HEARTBEAT,Prototype,
+SAFE,R43,10k,2,2,GND,Prototype,
+SAFE,R44,100k,1,1,READY,Prototype,
+SAFE,R44,100k,2,2,GND,Prototype,
+SAFE,R45,220R,1,1,ENABLE,Prototype,
+SAFE,R45,220R,2,2,GATE,Prototype,
+SAFE,R46,100k,1,1,GATE,Prototype,
+SAFE,R46,100k,2,2,GND,Prototype,
+SAFE,R47,100k,1,1,ENABLE,Prototype,
+SAFE,R47,100k,2,2,GND,Prototype,
+SAFE,Q1,NMOS,1,G,GATE,Prototype,
+SAFE,Q1,NMOS,2,S,GND,Prototype,
+SAFE,Q1,NMOS,3,D,COIL_MINUS,Prototype,
+SAFE,D1,Flyback,1,K,COIL_PLUS,Prototype,"Cathode to switched coil positive, directly across coil."
+SAFE,D1,Flyback,2,A,COIL_MINUS,Prototype,"Cathode to switched coil positive, directly across coil."
+SAFE,C40,100nF,1,1,3V3,Prototype,
+SAFE,C40,100nF,2,2,GND,Prototype,
+SAFE,C41,100nF,1,1,3V3,Prototype,
+SAFE,C41,100nF,2,2,GND,Prototype,
+SAFE,C42,100nF,1,1,3V3,Prototype,
+SAFE,C42,100nF,2,2,GND,Prototype,
+UI,RV1,10k linear pot,1,LOW,GND,Prototype,
+UI,RV1,10k linear pot,2,WIPER,POT1,Prototype,
+UI,RV1,10k linear pot,3,HIGH,3V3,Prototype,
+UI,R60,1k,1,1,POT1,Prototype,
+UI,R60,1k,2,2,DEPTH1,Prototype,
+UI,C60,100nF,1,1,DEPTH1,Prototype,
+UI,C60,100nF,2,2,GND,Prototype,
+UI,RV2,10k linear pot,1,LOW,GND,Prototype,
+UI,RV2,10k linear pot,2,WIPER,POT2,Prototype,
+UI,RV2,10k linear pot,3,HIGH,3V3,Prototype,
+UI,R61,1k,1,1,POT2,Prototype,
+UI,R61,1k,2,2,DEPTH2,Prototype,
+UI,C61,100nF,1,1,DEPTH2,Prototype,
+UI,C61,100nF,2,2,GND,Prototype,
+UI,SW3,Momentary NO,1,1,MODE,Prototype,
+UI,SW3,Momentary NO,2,2,GND,Prototype,
+UI,R62,10k,1,1,3V3,Prototype,
+UI,R62,10k,2,2,MODE,Prototype,
+UI,SW2,DPDT maintained mute,1,COIL_COMMON,COIL_PLUS,Hold,"Logical contacts; RUN closes both poles, MUTE opens both. Verify switch terminal drawing."
+UI,SW2,DPDT maintained mute,2,RUN_THROW,5V,Hold,"Logical contacts; RUN closes both poles, MUTE opens both. Verify switch terminal drawing."
+UI,SW2,DPDT maintained mute,3,MUTE_THROW,NC,Hold,"Logical contacts; RUN closes both poles, MUTE opens both. Verify switch terminal drawing."
+UI,SW2,DPDT maintained mute,4,SENSE_COMMON,MUTE_SENSE,Hold,"Logical contacts; RUN closes both poles, MUTE opens both. Verify switch terminal drawing."
+UI,SW2,DPDT maintained mute,5,RUN_THROW,GND,Hold,"Logical contacts; RUN closes both poles, MUTE opens both. Verify switch terminal drawing."
+UI,SW2,DPDT maintained mute,6,MUTE_THROW,NC,Hold,"Logical contacts; RUN closes both poles, MUTE opens both. Verify switch terminal drawing."
+UI,R63,10k,1,1,3V3,Prototype,
+UI,R63,10k,2,2,MUTE_SENSE,Prototype,
+UI,R64,1k,1,1,LINK_LED,Prototype,
+UI,R64,1k,2,2,LED_green,Prototype,
+UI,LED1,green LED,1,A,LED_green,Prototype,
+UI,LED1,green LED,2,K,GND,Prototype,
+UI,R65,1k,1,1,MODE_LED,Prototype,
+UI,R65,1k,2,2,LED_blue,Prototype,
+UI,LED2,blue LED,1,A,LED_blue,Prototype,
+UI,LED2,blue LED,2,K,GND,Prototype,
+UI,R66,100k,1,1,BAT_SENSE_SW,Hold,DNP until switched battery measurement circuit is closed.
+UI,R66,100k,2,2,BAT_ADC,Hold,DNP until switched battery measurement circuit is closed.
+UI,R67,100k,1,1,BAT_ADC,Hold,DNP until switched battery measurement circuit is closed.
+UI,R67,100k,2,2,GND,Hold,DNP until switched battery measurement circuit is closed.
+UI,C62,100nF,1,1,BAT_ADC,Hold,DNP until switched battery measurement circuit is closed.
+UI,C62,100nF,2,2,GND,Hold,DNP until switched battery measurement circuit is closed.

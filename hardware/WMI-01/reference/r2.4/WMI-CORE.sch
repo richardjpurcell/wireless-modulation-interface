@@ -1,0 +1,244 @@
+EESchema Schematic File Version 4
+LIBS:WMI-CORE-cache
+EELAYER 29 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title "WMI-01 / CORE - REVIEW ONLY"
+Date "2026-11-24"
+Rev "2.4"
+Comp "Wireless Modulation Interface"
+Comment1 "Logical module/contact pin IDs; see README and CSV"
+$EndDescr
+$Comp
+L WMI_U3 U3
+U 1 1 60000000
+P 2800 1800
+F 0 "U3" H 2800 800 60  0000 C CNN
+F 1 "ESP32-S3 Feather" H 2800 2800 50  0000 C CNN
+	1 2800 1800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	2200 1000 1600 1000
+Text Label 1600 1000 0 40 ~ 0
+5V
+Wire Wire Line
+	2200 1100 1600 1100
+Text Label 1600 1100 0 40 ~ 0
+GND
+Wire Wire Line
+	2200 1200 1600 1200
+Text Label 1600 1200 0 40 ~ 0
+3V3
+Wire Wire Line
+	2200 1300 1600 1300
+Text Label 1600 1300 0 40 ~ 0
+SDA
+Wire Wire Line
+	2200 1400 1600 1400
+Text Label 1600 1400 0 40 ~ 0
+SCL
+Wire Wire Line
+	2200 1500 1600 1500
+Text Label 1600 1500 0 40 ~ 0
+DEPTH1
+Wire Wire Line
+	2200 1600 1600 1600
+Text Label 1600 1600 0 40 ~ 0
+DEPTH2
+Wire Wire Line
+	2200 1700 1600 1700
+Text Label 1600 1700 0 40 ~ 0
+READY
+Wire Wire Line
+	2200 1800 1600 1800
+Text Label 1600 1800 0 40 ~ 0
+MODE
+Wire Wire Line
+	2200 1900 1600 1900
+Text Label 1600 1900 0 40 ~ 0
+MUTE_SENSE
+Wire Wire Line
+	2200 2000 1600 2000
+Text Label 1600 2000 0 40 ~ 0
+LINK_LED
+Wire Wire Line
+	2200 2100 1600 2100
+Text Label 1600 2100 0 40 ~ 0
+MODE_LED
+Wire Wire Line
+	2200 2200 1600 2200
+Text Label 1600 2200 0 40 ~ 0
+HEARTBEAT
+Wire Wire Line
+	2200 2300 1600 2300
+Text Label 1600 2300 0 40 ~ 0
+FAULT_N
+Wire Wire Line
+	2200 2400 1600 2400
+Text Label 1600 2400 0 40 ~ 0
+BAT_ADC
+Wire Wire Line
+	2200 2500 1600 2500
+Text Label 1600 2500 0 40 ~ 0
+UART_TX
+Wire Wire Line
+	2200 2600 1600 2600
+Text Label 1600 2600 0 40 ~ 0
+UART_RX
+$Comp
+L WMI_U4 U4
+U 1 1 60000001
+P 7200 1800
+F 0 "U4" H 7200 1250 60  0000 C CNN
+F 1 "MCP4728 module" H 7200 2350 50  0000 C CNN
+	1 7200 1800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	6600 1450 6000 1450
+Text Label 6000 1450 0 40 ~ 0
+3V3
+Wire Wire Line
+	6600 1550 6000 1550
+Text Label 6000 1550 0 40 ~ 0
+GND
+Wire Wire Line
+	6600 1650 6000 1650
+Text Label 6000 1650 0 40 ~ 0
+SDA
+Wire Wire Line
+	6600 1750 6000 1750
+Text Label 6000 1750 0 40 ~ 0
+SCL
+Wire Wire Line
+	6600 1850 6000 1850
+Text Label 6000 1850 0 40 ~ 0
+DAC_A
+Wire Wire Line
+	6600 1950 6000 1950
+Text Label 6000 1950 0 40 ~ 0
+DAC_B
+Wire Wire Line
+	6600 2050 6000 2050
+Text Label 6000 2050 0 40 ~ 0
+DAC_C
+Wire Wire Line
+	6600 2150 6000 2150
+Text Label 6000 2150 0 40 ~ 0
+DAC_D
+$Comp
+L WMI_J3 J3
+U 1 1 60000002
+P 11600 1800
+F 0 "J3" H 11600 1250 60  0000 C CNN
+F 1 "Digital expansion" H 11600 2350 50  0000 C CNN
+	1 11600 1800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	11000 1450 10400 1450
+Text Label 10400 1450 0 40 ~ 0
+GND
+Wire Wire Line
+	11000 1550 10400 1550
+Text Label 10400 1550 0 40 ~ 0
+3V3
+Wire Wire Line
+	11000 1650 10400 1650
+Text Label 10400 1650 0 40 ~ 0
+SDA
+Wire Wire Line
+	11000 1750 10400 1750
+Text Label 10400 1750 0 40 ~ 0
+SCL
+Wire Wire Line
+	11000 1850 10400 1850
+Text Label 10400 1850 0 40 ~ 0
+UART_TX
+Wire Wire Line
+	11000 1950 10400 1950
+Text Label 10400 1950 0 40 ~ 0
+UART_RX
+NoConn ~ 11000 2050
+NoConn ~ 11000 2150
+$Comp
+L WMI_J4 J4
+U 1 1 60000003
+P 16000 1800
+F 0 "J4" H 16000 800 60  0000 C CNN
+F 1 "Core harness - logical boundary" H 16000 2800 50  0000 C CNN
+	1 16000 1800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	15400 1000 14800 1000
+Text Label 14800 1000 0 40 ~ 0
+5V
+Wire Wire Line
+	15400 1100 14800 1100
+Text Label 14800 1100 0 40 ~ 0
+GND
+Wire Wire Line
+	15400 1200 14800 1200
+Text Label 14800 1200 0 40 ~ 0
+3V3
+Wire Wire Line
+	15400 1300 14800 1300
+Text Label 14800 1300 0 40 ~ 0
+DAC_A
+Wire Wire Line
+	15400 1400 14800 1400
+Text Label 14800 1400 0 40 ~ 0
+DAC_B
+Wire Wire Line
+	15400 1500 14800 1500
+Text Label 14800 1500 0 40 ~ 0
+DAC_C
+Wire Wire Line
+	15400 1600 14800 1600
+Text Label 14800 1600 0 40 ~ 0
+DAC_D
+Wire Wire Line
+	15400 1700 14800 1700
+Text Label 14800 1700 0 40 ~ 0
+READY
+Wire Wire Line
+	15400 1800 14800 1800
+Text Label 14800 1800 0 40 ~ 0
+HEARTBEAT
+Wire Wire Line
+	15400 1900 14800 1900
+Text Label 14800 1900 0 40 ~ 0
+FAULT_N
+Wire Wire Line
+	15400 2000 14800 2000
+Text Label 14800 2000 0 40 ~ 0
+DEPTH1
+Wire Wire Line
+	15400 2100 14800 2100
+Text Label 14800 2100 0 40 ~ 0
+DEPTH2
+Wire Wire Line
+	15400 2200 14800 2200
+Text Label 14800 2200 0 40 ~ 0
+MODE
+Wire Wire Line
+	15400 2300 14800 2300
+Text Label 14800 2300 0 40 ~ 0
+MUTE_SENSE
+Wire Wire Line
+	15400 2400 14800 2400
+Text Label 14800 2400 0 40 ~ 0
+LINK_LED
+Wire Wire Line
+	15400 2500 14800 2500
+Text Label 14800 2500 0 40 ~ 0
+MODE_LED
+Wire Wire Line
+	15400 2600 14800 2600
+Text Label 14800 2600 0 40 ~ 0
+BAT_ADC
+$EndSCHEMATC
