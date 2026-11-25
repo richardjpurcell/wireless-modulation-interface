@@ -4,4 +4,6 @@
 (lib (name "WMI-UI") (type "KiCad") (uri "${KIPRJMOD}/../../common/symbols/WMI-UI.kicad_sym") (options "") (descr "WMI performance control symbols"))
 
 (lib (name "WMI-Safe") (type "KiCad") (uri "${KIPRJMOD}/../../common/symbols/WMI-Safe.kicad_sym") (options "") (descr "WMI supervision symbols"))
+
+(lib (name "WMI-CV2") (type "KiCad") (uri "${KIPRJMOD}/../../common/symbols/WMI-CV2.kicad_sym") (options "") (descr "WMI analog output symbols"))
 )
