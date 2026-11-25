@@ -1,0 +1,17 @@
+signal,origin,destination,level,status
+SYS_5V,PWR,CORE,5 V,provisional
+GND,PWR,CORE,0 V,provisional
+CORE_3V3,CORE,UI/SAFE/DAC,3.3 V,provisional
+RESET_N,SAFE,CORE,3.3 V,provisional
+DEPTH_A,UI,CORE,0-3.3 V,provisional
+DEPTH_B,UI,CORE,0-3.3 V,provisional
+MODE_N,UI,CORE,3.3 V,provisional
+MUTE_STATUS,SAFE,CORE,3.3 V,provisional
+CORE_READY,CORE,SAFE,3.3 V,provisional
+HEARTBEAT,CORE,SAFE,3.3 V,provisional
+LINK_LED,CORE,UI,3.3 V,provisional
+MODE_LED,CORE,UI,3.3 V,provisional
+DAC_A,CORE,CV2,0-2.048 V nominal,provisional
+DAC_B,CORE,CV2,0-2.048 V nominal,provisional
+DAC_C,CORE,reserved,0-2.048 V nominal,provisional
+DAC_D,CORE,reserved,0-2.048 V nominal,provisional
